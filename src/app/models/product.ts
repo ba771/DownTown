@@ -4,7 +4,8 @@ export class Product {
     title: string;
     price: string;
     quantity: number;
-    image_url?: string;
+    banner?: string;
+    images?: string[];
     rating?: number;
     description?: string;
 }

@@ -1,6 +1,5 @@
 <div class="card col-sm-3">
-    <img [src]="product.image_url" class="card-img-top" [alt]="product.title"
-    onerror="this.src='../assets/images/no_image.png';this.onerror='';">
+    <app-iwfb [_src]="product.banner" [_class]="'card-img-top'" [_alt]="product.title"></app-iwfb>
     <!-- Binding the product image, 
     onerror is an inbuilt browser function called whenever an element has an error
     in this instance, expected error can be that the src image is not found,
@@ -16,8 +15,12 @@
         <!-- Binding the product title -->
         
         <div class="d-flex justify-content-around">
-            <a href="#" class="btn">View product</a>
+            <a (click)="viewDetails()" class="btn">View product</a>
             <a href="#" class="btn float-end">View Shop</a>
         </div>
     </div>
 </div>
+
+<app-modal #product_details [modal_size]="product_details.sizes.medium">
+    <app-product-details [product]="product"></app-product-details>
+</app-modal>

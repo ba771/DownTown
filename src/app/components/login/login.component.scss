@@ -1,0 +1,52 @@
+.formContainer{
+    background-color: rgba(10, 9, 9, 0.849);
+    height: 500px;
+    margin-top: 4em;
+    border-radius: 6px;
+}
+.header{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 30px;
+    font-family: sanchez;
+    font-weight: bold;
+    color: rgb(253, 182, 76);
+}
+form{
+    margin-top: 2em;
+
+}
+.form-group{
+    padding-left: 20px;
+    padding-right: 20px;
+    color:white;
+    
+}
+label{
+    font-weight: normal;
+    color: rgb(250, 249, 249);
+}
+h6{
+    font-weight:unset;
+    color: white;
+    text-align: center;
+}
+.btn-primary{
+    width: 410px;
+    margin-top:20px;
+    background-color: rgba(221, 53, 53, 0.829);
+    border: rgba(221, 53, 53, 0.829) ;
+    
+}
+h6{
+    font-size: 10px;
+}
+a{
+    text-align: center;
+    text-decoration: underline;
+
+}
+
+a:hover{
+    color: rgb(255, 196, 0);
+}
